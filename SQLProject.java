@@ -28,7 +28,7 @@ public class SQLProject {
 
         try 
         {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/sample1?autoReconnect=true&useSSL=false","root","Botgarden12!");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/sample1?autoReconnect=true&useSSL=false","root","password!");
             Class.forName("com.mysql.cj.jdbc.Driver");
              stmt = conn.createStatement();
              rs = stmt.executeQuery("SELECT * FROM patientbed");
